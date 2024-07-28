@@ -1,0 +1,29 @@
+
+html {
+    @include breakpoint(tablethorizontal){
+        background: linear-gradient(180deg,#fff 0%, #ebecfc 100%);
+
+    }
+}
+body {
+    font-family: $primary-font;
+    font-size: 16px;
+    background: linear-gradient(180deg,#fff 0%, #ebecfc 100%);
+    
+    @include breakpoint(tablethorizontal){
+        background-image: url('/img/imagen-tablethorizontal.png');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 380px;
+    }
+   
+    @include breakpoint(desktop) {
+        background-size: 400px;
+        background-position: top -2px right;
+    }
+} 
+
+
+img {
+    max-width: 100%;
+}

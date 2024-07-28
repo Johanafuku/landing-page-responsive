@@ -1,0 +1,62 @@
+@mixin breakpoint($bp) {
+
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  } 
+  
+@if $bp == tablethorizontal {
+  @media (min-width: $bp-tablet-horizontal) {
+    @content;
+    }
+  } 
+
+@if $bp == desktop {
+  @media (min-width: $bp-desktop) {
+    @content;
+  }
+} 
+
+@if $bp == desktopxl {
+  @media (min-width: $bp-desktop-xl) {
+    @content;
+}
+} 
+}
+
+@mixin reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button($bg-color: $dark-blue, $color: $white) {
+  display: inline-block;
+  padding: 10px 24px;
+  text-decoration: none;
+  color: $color;
+  background-color: $bg-color;
+  border-radius: 1.5rem;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@mixin button-pink-orange() {
+  @include button();
+  background-image: $gradient-pink-orange;
+  
+}
+
+@mixin button-pink-blue() {
+  @include button();
+background-image: $gradient-pink-blue;
+
+}
+
+@mixin link(){
+  color: $pink;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}

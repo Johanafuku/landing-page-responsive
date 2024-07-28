@@ -1,0 +1,23 @@
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    @include breakpoint(tablet) {
+        padding: 0;
+    }
+
+    @include breakpoint(tablethorizontal) {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    @include breakpoint(desktop) {
+        max-width: 1400px;
+    }
+
+    @include breakpoint(desktopxl) {
+        max-width: 1400px;
+    }
+}

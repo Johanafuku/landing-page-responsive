@@ -1,0 +1,13 @@
+main {
+  
+    @include breakpoint(tablet) {
+        margin-left: 39px;
+        margin-right: 40px;
+    }
+    @include breakpoint(tablethorizontal) {
+        margin-left: 0;
+        margin-right: 0;
+           
+          
+        }
+    }

@@ -1,0 +1,25 @@
+.button {
+    @include button();
+    &:hover {
+        opacity: 30%;
+       }
+}
+
+.button-pink-orange {
+   @include button-pink-orange();
+
+   &:hover {
+    opacity: 30%;
+   }
+}
+
+.button-pink-blue {
+    @include button-pink-blue();
+    &:hover {
+        opacity: 45%;
+       }
+ }
+
+.link {
+    @include link();
+}

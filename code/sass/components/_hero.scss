@@ -1,0 +1,164 @@
+.hero {
+    @include breakpoint(tablethorizontal){
+        padding-bottom: 50px;
+    }
+    .hero-title {
+        margin-bottom: 24px;
+        font-size: 40px;
+        font-weight: bolder;
+        line-height: 48px;
+
+        @include breakpoint(tablethorizontal) {
+            font-size: 50px;
+        }
+    }
+    .hero-description {
+        margin-bottom: 24px;
+        font-size: 1rem;
+        color: $grey;
+        line-height: 26px;
+        @include breakpoint(tablethorizontal){
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+    }
+
+    .hero-button {
+        margin-bottom: 46px;
+    }
+
+    .hero-img {
+        text-align: center;
+        width: 90%;
+        position: relative;
+        margin-bottom: 66px;
+
+        @include breakpoint(tablet) {
+            margin: 0;
+            width: 40%;
+            padding-left: 20px;
+          
+        }
+
+        & .img-tablet {
+            display: none;
+            @include breakpoint(tablet) {
+                display: block;
+                width: 100%;
+                position: absolute;
+                top: -82px;
+                left: 61px;
+            }
+            @include breakpoint(tablethorizontal) {
+                display: none;
+                //se puso como fondo para el horizontal y desktop
+            }
+
+        }
+    }
+    .img-mobile {
+        @include breakpoint(tablet) {
+            display: none;
+        }
+    }
+   
+        
+    }
+    .number1, .number2 {
+        display: inline-block;
+        background-color: $white;
+        color: $dark-blue;
+        padding: 5px;
+        gap: 10px;
+        text-align: left;
+        width: max-content;
+        position: absolute;
+        border-radius: 10px;
+        box-shadow: 0 34px 54px 0 rgba(6, 22, 141, 0.1589);
+
+        span {
+            display: block;
+        }
+        .number-title {
+            font-size: 14px;
+            color: $grey;
+            margin-bottom: 5px;
+        }
+        .number-number {
+            color: $dark-blue;
+            font-size: 32px;
+            font-weight: bolder;
+           
+        }
+    }
+
+    .number1 {
+        padding: 16px 45px 16px 20px;
+        top: 180px;
+        left: 2px;
+       @include breakpoint(tablet) {
+        padding: 16px 45px 16px 20px;
+        top: 231px;
+        left: -16px;
+       }
+       @include breakpoint(tablethorizontal) {
+        top: 255px;
+        left: 38px;
+       }
+
+       @include breakpoint(desktop) {
+        left: 212px;
+       }
+
+       @include breakpoint(desktopxl) {
+        left: 282px;
+       }
+    }
+
+    .number2 {
+        padding: 16px 40px 16px 20px;
+        top: -15px;
+        right: -25px;
+        @include breakpoint(tablet) {
+            top: -13px;
+            right: 0;
+            padding: 16px;  
+        }
+        @include breakpoint(tablethorizontal){
+            top: 50px;
+            right: -106px;
+            padding: 16px 40px 16px 20px;
+            
+        }
+
+        @include breakpoint(desktop) {
+            top: 68px;
+            right: -214px;
+        }
+        @include breakpoint(desktopxl) {
+            right: -250px;
+        }
+    }
+
+  .container {
+    @include breakpoint(tablet) {
+        display: flex;
+        padding-bottom: 99px;
+        margin-bottom: 50px;
+    }
+
+    & .hero-content {
+        @include breakpoint(tablet) {
+            width: 65%;
+            padding-top: 55px;
+        } 
+        @include breakpoint(tablethorizontal) {
+            width: 50%;
+        }
+        
+        @include breakpoint(desktop) {
+            max-width: 420px;
+        }
+    }
+   
+} 
