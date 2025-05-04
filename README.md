@@ -2,6 +2,18 @@
 
 A responsive proyect of a landing page using HTML, Sass, with vite to compile. 👾
 
+## Previews
+
+- Mobile:
+<img src='/code/img/preview_mobile.png'>
+
+
+- Tablet:
+<img src='/code/img/preview_tablet.png'>
+
+
+- Desktop:
+<img src='/code/img/preview_desktop.png'>
 ## Features
 
 ☑️ Use of the strategy mobile first.
@@ -34,6 +46,20 @@ If you have more ideas to improve the code, or make it more efficient. Let me no
 # Landing-page-responsive 📱💻
 
 Proyecto responsive usando HTML, SASS, con vite y Node.js 👾
+
+## Vistas previas
+
+- Mobile:
+<img src='/code/img/preview_mobile.png'>
+
+
+- Tablet:
+<img src='/code/img/preview_tablet.png'>
+
+
+- Desktop:
+<img src='/code/img/preview_desktop.png'>
+## Features
 
 ## Características
 
